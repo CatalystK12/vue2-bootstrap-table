@@ -70,11 +70,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(2)
-	__vue_script__ = __webpack_require__(6)
+	__vue_script__ = __webpack_require__(2)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/VueBootstrapTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(46)
+	__vue_template__ = __webpack_require__(42)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -102,351 +101,33 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(3);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js?sourceMap!../node_modules/vue-loader/lib/style-rewriter.js!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./VueBootstrapTable.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js?sourceMap!../node_modules/vue-loader/lib/style-rewriter.js!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./VueBootstrapTable.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(4)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    .vue-table {\n\n    }\n\n    /*#maindiv {\n        content: \" \";\n        box-sizing: border-box;\n        display:\n        table; width: 100%;\n    }\n*/\n    .vue-table-loading .spinner {\n        border: 16px solid #f3f3f3; /* Light grey */\n        border-top: 16px solid #3498db; /* Blue */\n        border-radius: 50%;\n        width: 120px;\n        height: 120px;\n        -webkit-animation: spin 2s linear infinite;\n                animation: spin 2s linear infinite;\n        position: absolute;\n        left: 50%;\n        top: 50%;\n        margin: -60px 0 0 -60px;\n    }\n\n    @-webkit-keyframes spin {\n        0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n        100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n    }\n\n    @keyframes spin {\n        0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n        100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n    }\n\n\n    .vue-table-loading{\n        position: absolute;\n        z-index: 99;\n        background-color: #ddd;\n        opacity: 0.5;\n        width: 100%;\n        height: 100%;\n    }\n\n    .vue-table-loading-hidden {\n        display: none;\n    }\n\n    table.vue-table thead > tr > th {\n        cursor: pointer;\n        padding-right: 30px !important;\n    }\n\n    /*.vue-table th.active {\n        color: red;\n    }*/\n\n    .vue-table .arrow {\n        opacity: 1;\n        position: relative;\n    }\n\n    .vue-table .arrow:after {\n        position: absolute;\n        bottom: 8px;\n        right: 8px;\n        display: block;\n        font-family: FontAwesome;\n        content: \"\\F0DC\"; /* up-down arrow */\n        /*\n        display: inline-block;\n        vertical-align: middle;\n        width: 0;\n        height: 0;\n        margin-left: 5px;\n        opacity: 0.66;*/\n    }\n\n    .vue-table .arrow.asc:after {\n        content: \"\\F15D\";\n        /*\n        border-left: 4px solid transparent;\n        border-right: 4px solid transparent;\n        border-bottom: 4px solid #000;\n        */\n    }\n\n    .vue-table .arrow.dsc:after {\n        content: \"\\F15E\";\n    }\n\n\n    .vue-table .editableField {\n        cursor:pointer;\n    }\n\n    /*.vue-table .selected-cell {\n        background-color: #F7C072;\n    }\n\n    .vue-table .selected-row {\n        background-color: #FAE1BE !important;\n    }*/\n", "", {"version":3,"sources":["/./src/VueBootstrapTable.vue?568425cd"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAkFA;;KAEA;;IAEA;;;;;;EAMA;IACA;QACA,2BAAA,CAAA,gBAAA;QACA,+BAAA,CAAA,UAAA;QACA,mBAAA;QACA,aAAA;QACA,cAAA;QACA,2CAAA;gBAAA,mCAAA;QACA,mBAAA;QACA,UAAA;QACA,SAAA;QACA,wBAAA;KACA;;IAEA;QACA,KAAA,gCAAA,CAAA,wBAAA,EAAA;QACA,OAAA,kCAAA,CAAA,0BAAA,EAAA;KACA;;IAHA;QACA,KAAA,gCAAA,CAAA,wBAAA,EAAA;QACA,OAAA,kCAAA,CAAA,0BAAA,EAAA;KACA;;;IAGA;QACA,mBAAA;QACA,YAAA;QACA,uBAAA;QACA,aAAA;QACA,YAAA;QACA,aAAA;KACA;;IAEA;QACA,cAAA;KACA;;IAEA;QACA,gBAAA;QACA,+BAAA;KACA;;IAEA;;OAEA;;IAEA;QACA,WAAA;QACA,mBAAA;KACA;;IAEA;QACA,mBAAA;QACA,YAAA;QACA,WAAA;QACA,eAAA;QACA,yBAAA;QACA,iBAAA,CAAA,mBAAA;QACA;;;;;;wBAMA;KACA;;IAEA;QACA,iBAAA;QACA;;;;UAIA;KACA;;IAEA;QACA,iBAAA;KACA;;;IAGA;QACA,eAAA;KACA;;IAEA;;;;;;OAMA","file":"VueBootstrapTable.vue","sourcesContent":["<template>\n    <div id=\"maindiv\" @click=\"closeDropdown\" @keyup.esc=\"closeDropdown\">\n        <!--<pre>{{columns}}</pre>-->\n        <!--<pre>{{$data}}</pre>-->\n        <div class=\"col-sm-6\">\n            <div v-if=\"showFilter\" style=\"padding-top: 10px;padding-bottom: 10px;\">\n                <div class=\"input-group input-group-sm\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Filter\" v-model=\"filterKey\">\n                    <div class=\"input-group-addon\">\n                        <i class=\"fa fa-search\"></i>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div v-if=\"showColumnPicker\" style=\"padding-top: 10px;padding-bottom: 10px;float:right;\">\n                <div class=\"btn-group\" :class=\"{'open' : columnMenuOpen}\">\n                    <button @click.stop.prevent=\"columnMenuOpen = !columnMenuOpen\" @keyup.esc=\"columnMenuOpen = false\"\n                            type=\"button\" class=\"btn btn-secondary btn-sm dropdown-toggle\" data-toggle=\"dropdown\"\n                            aria-haspopup=\"true\">\n                        Columns <span class=\"caret\"></span>\n                    </button>\n                    <ul class=\"dropdown-menu\">\n                        <li v-for=\"column in displayCols\">\n                            <a class=\"dropdown-item\" href=\"#\" @click.stop.prevent=\"toggleColumn(column)\">\n                                <i v-if=\"column.visible\" class=\"fa fa-check\"></i> {{column.title}}\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-sm-12\">\n            <div id=\"loadingdiv\" :class=\"{'vue-table-loading': this.loading , 'vue-table-loading-hidden': !this.loading}\">\n                <div class=\"spinner\"></div>\n            </div>\n            <table class=\"table table-bordered table-hover table-condensed table-striped vue-table\">\n                <thead>\n                    <tr>\n                        <th v-for=\"column in displayColsVisible\" @click=\"sortBy($event, column.name)\"\n                            track-by=\"column\"\n                            :class=\"getClasses(column)\">\n                            {{ column.title }}\n                        </th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr v-for=\"entry in filteredValuesSorted \" track-by=\"entry\" @click=\"rowClickHandler($event, entry)\">\n                        <td v-for=\"column in displayColsVisible\" track-by=\"column\"\n                            v-show=\"column.visible\" :class=\"column.cellstyle\">\n                            <span v-if=\"column.renderfunction!==false\" v-html=\"column.renderfunction( column.name, entry )\"></span>\n                            <span v-else-if=\"!column.editable\"> {{ entry[column.name] }} </span>\n                            <value-field-section v-else\n                                :entry=\"entry\"\n                                :columnname=\"column.name\"></value-field-section>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div v-if=\"paginated\" class=\"col-sm-12\">\n            <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"pagination bar\">\n              <div class=\"btn-group\" role=\"group\" aria-label=\"first page\">\n                <button type=\"button\" class=\"btn btn-default\" @click=\"page=1\">&laquo;</button>\n              </div>\n              <div class=\"btn-group\" role=\"group\" aria-label=\"pages\">\n                <button v-for=\"index in validPageNumbers\"\n                    type=\"button\" class=\"btn btn-default\"\n                    :class=\"{ active: page===index }\"\n                    @click=\"page=index\">\n                        {{index}}\n                </button>\n              </div>\n              <div class=\"btn-group\" v-if=\"showPaginationEtc\">...</div>\n              <div class=\"btn-group\" role=\"group\" aria-label=\"last page\">\n                <button type=\"button\" class=\"btn btn-default\" @click=\"page=maxPage\">&raquo;</button>\n              </div>\n            </div>\n        </div>\n    </div>\n</template>\n<style>\n    .vue-table {\n\n    }\n\n    /*#maindiv {\n        content: \" \";\n        box-sizing: border-box;\n        display:\n        table; width: 100%;\n    }\n*/\n    .vue-table-loading .spinner {\n        border: 16px solid #f3f3f3; /* Light grey */\n        border-top: 16px solid #3498db; /* Blue */\n        border-radius: 50%;\n        width: 120px;\n        height: 120px;\n        animation: spin 2s linear infinite;\n        position: absolute;\n        left: 50%;\n        top: 50%;\n        margin: -60px 0 0 -60px;\n    }\n\n    @keyframes spin {\n        0% { transform: rotate(0deg); }\n        100% { transform: rotate(360deg); }\n    }\n\n\n    .vue-table-loading{\n        position: absolute;\n        z-index: 99;\n        background-color: #ddd;\n        opacity: 0.5;\n        width: 100%;\n        height: 100%;\n    }\n\n    .vue-table-loading-hidden {\n        display: none;\n    }\n\n    table.vue-table thead > tr > th {\n        cursor: pointer;\n        padding-right: 30px !important;\n    }\n\n    /*.vue-table th.active {\n        color: red;\n    }*/\n\n    .vue-table .arrow {\n        opacity: 1;\n        position: relative;\n    }\n\n    .vue-table .arrow:after {\n        position: absolute;\n        bottom: 8px;\n        right: 8px;\n        display: block;\n        font-family: FontAwesome;\n        content: \"\\f0dc\"; /* up-down arrow */\n        /*\n        display: inline-block;\n        vertical-align: middle;\n        width: 0;\n        height: 0;\n        margin-left: 5px;\n        opacity: 0.66;*/\n    }\n\n    .vue-table .arrow.asc:after {\n        content: \"\\f15d\";\n        /*\n        border-left: 4px solid transparent;\n        border-right: 4px solid transparent;\n        border-bottom: 4px solid #000;\n        */\n    }\n\n    .vue-table .arrow.dsc:after {\n        content: \"\\f15e\";\n    }\n\n\n    .vue-table .editableField {\n        cursor:pointer;\n    }\n\n    /*.vue-table .selected-cell {\n        background-color: #F7C072;\n    }\n\n    .vue-table .selected-row {\n        background-color: #FAE1BE !important;\n    }*/\n</style>\n<script>\n\n    import axios from 'axios';\n    import qs from 'qs';\n    import lodashorderby from 'lodash.orderby';\n    import lodashincludes from 'lodash.includes';\n    import lodashfindindex from 'lodash.findindex';\n\n\n    /* Field Section used for displaying and editing value of cell */\n    var valueFieldSection = {\n      template: '<span v-if=\"!enabled\" @dblclick=\"toggleInput\" class=\"editableField\">{{this.entry[this.columnname]}}</span>'+\n          '<div v-else-if=\"enabled\" class=\"input-group input-group-sm\">'+\n          '  <input type=\"text\" class=\"form-control\" v-model=\"datavalue\" @keyup.enter=\"saveThis\" @keyup.esc=\"cancelThis\">'+\n          '  <span class=\"input-group-btn\">'+\n          '    <button class=\"btn btn-danger\" type=\"button\" @click=\"cancelThis\" ><span class=\"fa fa-times\" aria-hidden=\"true\"></span></button>'+\n          '    <button class=\"btn btn-primary\" type=\"button\" @click=\"saveThis\" ><span class=\"fa fa-check\" aria-hidden=\"true\"></span></button>'+\n          '  </span>'+\n          '</div>',\n      props: ['entry','columnname'],\n      data: function () {\n          return {\n            enabled: false,\n            datavalue: \"\",\n          }\n      },\n      methods: {\n        saveThis: function () {\n            var originalValue = this.entry[this.columnname];\n            this.entry[this.columnname] = this.datavalue;\n            this.$parent.$emit('cellDataModifiedEvent', originalValue, this.datavalue, this.columnname,  this.entry);\n            this.enabled = !this.enabled;\n        },\n        cancelThis: function () {\n            this.datavalue = this.entry[this.columnname];\n            this.enabled = !this.enabled;\n        },\n        toggleInput: function () {\n            this.datavalue= this.entry[this.columnname];\n            this.enabled=!this.enabled;\n        },\n      }\n    };\n\n    export default {\n        name: \"VueBootstrapTable\",\n        components: {\n            'value-field-section': valueFieldSection,\n        },\n        props: {\n            /**\n             * The column titles, required\n             */\n            columns: {\n                type: Array,\n                required: true,\n            },\n            /**\n             * The rows, an Array of objects\n             */\n            values: {\n                type: Array,\n                required: false,\n            },\n            /**\n             * Enable/disable table sorting, optional, default true\n             */\n            sortable: {\n                type: Boolean,\n                required: false,\n                default: true,\n            },\n            /**\n             * Enable/disable table multicolumn sorting, optional, default false.\n             * Also sortable must be enabled for this function to work.\n             */\n            multiColumnSortable: {\n                type: Boolean,\n                required: false,\n                default: false,\n            },\n            /**\n             * Enable/disable input filter, optional, default false\n             */\n            showFilter: {\n                type: Boolean,\n                required: false,\n                default: false,\n            },\n            /**\n             * Define if Filter search field is to work in a case Sensitive way. Default: true\n             */\n            filterCaseSensitive: {\n                type: Boolean,\n                required: false,\n                default: true,\n            },\n            /**\n             * Enable/disable column picker to show/hide table columns, optional, default false\n             */\n            showColumnPicker: {\n                type: Boolean,\n                required: false,\n                default: false,\n            },\n            /**\n             * Enable/disable pagination for the table, optional, default false\n             */\n            paginated: {\n                type: Boolean,\n                required: false,\n                default: false,\n            },\n            /**\n             * If pagination is enabled defining the page size, optional, default 10\n             */\n            pageSize: {\n                type: Number,\n                required: false,\n                default: 10,\n            },\n            /**\n             * If loading of table is to be done through ajax, then this object must be set\n             */\n            ajax: {\n                type: Object,\n                required: false,\n                default: function () {\n                    return {\n                        enabled: false,\n                        url: \"\",\n                        method: \"GET\",\n                        delegate: false,\n                        axiosConfig: {}\n                    }\n                }\n            },\n            /**\n             * Function to handle row clicks\n             */\n            rowClickHandler: {\n                type: Function,\n                required: false,\n                default: function () {}\n            },\n        },\n        data: function () {\n            return {\n                filteredSize: 0,\n                filterKey: \"\",\n                sortKey: [],\n                sortOrders: {},\n                sortChanged: 1,\n                columnMenuOpen: false,\n                displayCols: [],\n                filteredValues: [],\n                page: 1,\n                echo: 0,\n                loading: false,\n            };\n        },\n        mounted: function () {\n          this.$nextTick(function () {\n              this.loading= true;\n              this.setSortOrders();\n              var self = this;\n              this.columns.forEach(function (column) {\n                  var obj = self.buildColumnObject(column);\n                  self.displayCols.push(obj);\n              });\n              if (this.ajax.enabled) {\n                  if (!this.ajax.delegate) {\n                      this.loading= true;\n                      this.fetchData(function (data) {\n                          self.values = data.data;\n                          self.processFilter();\n                      });\n                  }else\n                      this.processFilter();\n              }else\n                  this.processFilter();\n          })\n        },\n        created: function () {\n            var self = this ;\n            this.$on('cellDataModifiedEvent', self.fireCellDataModifiedEvent);\n        },\n        beforeDestroy: function(){\n            var self = this ;\n            this.$off('cellDataModifiedEvent', self.fireCellDataModifiedEvent);\n        },\n        watch: {\n            values: function () {\n                this.processFilter();\n            },\n            columns: function () {\n                this.displayCols = [];\n                var self = this;\n                this.columns.forEach(function (column) {\n                    var obj = self.buildColumnObject(column);\n                    self.displayCols.push(obj);\n                });\n                this.setSortOrders();\n            },\n            showFilter: function () {\n                this.filterKey = \"\";\n            },\n            showColumnPicker: function () {\n                this.columnMenuOpen = false;\n\n                this.displayCols.forEach(function (column) {\n                    column.visible = true;\n                });\n            },\n            filterKey: function () {\n                // filter was updated, so resetting to page 1\n                this.page = 1;\n                this.processFilter();\n            },\n            sortKey: function () {\n                this.processFilter();\n            },\n            sortChanged: function () {\n                this.processFilter();\n            },\n            page: function () {\n                this.processFilter();\n            },\n            paginated: function () {\n                this.processFilter();\n            },\n            loading: function () {\n                /*document.getElementById(\"loadingdiv\").style.width = document.getElementById(\"maindiv\").getBoundingClientRect().width + \"px\";\n                document.getElementById(\"loadingdiv\").style.height = document.getElementById(\"maindiv\").getBoundingClientRect().height+\"px\";*/\n            }\n        },\n        computed: {\n            displayColsVisible: function () {\n                var displayColsVisible = [];\n                for (var a in this.displayCols) {\n                    if (this.displayCols[a].visible)\n                        displayColsVisible.push(this.displayCols[a]);\n                }\n                return displayColsVisible;\n            },\n            filteredValuesSorted: function () {\n                var tColsDir = [];\n                for(var i=0, len=this.sortKey.length; i < len; i++){\n                    tColsDir.push(this.sortOrders[this.sortKey[i]].toLowerCase());\n                }\n                return lodashorderby(this.filteredValues, this.sortKey , tColsDir);\n            },\n            validPageNumbers: function () {\n                // 5 page max\n                var result = [];\n                var start = 1;\n                if (this.page > 3)\n                    start = this.page-2;\n                for ( var i = 0 ; start <= this.maxPage && i<5; start++ ) {\n                    result.push(start);\n                    i++;\n                }\n                return result;\n            },\n            maxPage: function () {\n                return Math.ceil(this.filteredSize / this.pageSize);\n            },\n            showPaginationEtc: function () {\n                var temp = 1;\n                if (this.page > 3)\n                    temp = this.page-2;\n                return ( (temp+4) < this.maxPage  );\n            },\n        },\n        methods: {\n            fireCellDataModifiedEvent:function ( originalValue, newValue, columnTitle, entry) {\n                this.$parent.$emit('cellDataModifiedEvent',originalValue, newValue, columnTitle, entry);\n            },\n            processFilter: function () {\n                var self = this;\n                this.loading = true;\n                if ( this.ajax.enabled && this.ajax.delegate ) {\n                   this.fetchData(function (data) {\n                       self.filteredSize = data.filtered;\n                       self.filteredValues = data.data;\n                       self.loading = false;\n                   });\n                } else {\n                    var result = this.values.filter(item => {\n                                var good = false;\n                                for (var col in self.displayColsVisible) {\n                                    if (self.filterCaseSensitive) {\n                                        if (lodashincludes(item[self.displayColsVisible[col].name] + \"\", self.filterKey + \"\")) {\n                                            good = true;\n                                        }\n                                    } else {\n                                        if (lodashincludes((item[self.displayColsVisible[col].name] + \"\").toLowerCase(), (self.filterKey + \"\").toLowerCase())) {\n                                            good = true;\n                                        }\n                                    }\n\n                                }\n                                return good;\n                    });\n\n                    var tColsDir = [];\n                    for(var i=0, len=this.sortKey.length; i < len; i++){\n                        tColsDir.push(this.sortOrders[this.sortKey[i]].toLowerCase());\n                    }\n\n                    result = lodashorderby(result, this.sortKey, tColsDir);\n\n                    this.filteredSize = result.length;\n                    if (this.paginated) {\n                        var startIndex = (this.page - 1) * this.pageSize;\n                        var tIndex = 0;\n                        var tempResult = [];\n                        while (tIndex < this.pageSize) {\n                            if (typeof result[startIndex + tIndex] !== \"undefined\")\n                                tempResult.push(result[startIndex + tIndex]);\n                            tIndex++;\n                        }\n                        self.filteredValues = tempResult;\n                    } else\n                        self.filteredValues = result;\n                    self.loading = false;\n                }\n            },\n            fetchData: function ( dataCallBackFunction ) {\n                var self = this;\n                var ajaxParameters = {\n                    params: {}\n                };\n                this.echo++;\n                if (this.ajax.enabled && this.ajax.delegate) {\n                    var tColsDir = [];\n                    for(var i=0, len=this.sortKey.length; i < len; i++){\n                        tColsDir.push(this.sortOrders[this.sortKey[i]].toLowerCase());\n                    }\n                    if ( this.ajax.method=== \"GET\" ) {\n                        //COPY\n                        ajaxParameters = JSON.parse(JSON.stringify(this.ajax.axiosConfig));\n                        ajaxParameters.params = {};\n                        ajaxParameters.params.sortcol = this.sortKey;\n                        ajaxParameters.params.sortdir = tColsDir;\n                        ajaxParameters.params.filter = this.filterKey;\n                        if (self.paginated ) {\n                            ajaxParameters.params.page = this.page;\n                            ajaxParameters.params.pagesize = this.pageSize;\n                        } else {\n                            ajaxParameters.params.page = 1;\n                            ajaxParameters.params.pagesize = null;\n                        }\n                        ajaxParameters.params.echo = this.echo;\n                    }\n                    if ( this.ajax.method=== \"POST\" ) {\n                        ajaxParameters.sortcol = this.sortKey;\n                        ajaxParameters.sortdir = tColsDir;\n                        ajaxParameters.filter = this.filterKey;\n                        if (self.paginated ) {\n                            ajaxParameters.page = this.page;\n                            ajaxParameters.pagesize = this.pageSize;\n                        } else {\n                            ajaxParameters.page = 1;\n                            ajaxParameters.pagesize = null;\n                        }\n                        ajaxParameters.echo = this.echo;\n                    }\n                    //console.log(JSON.stringify(ajaxParameters));\n                }\n                if( this.ajax.enabled && !this.ajax.delegate ) {\n                    if ( this.ajax.method=== \"GET\" ) {\n                        //COPY\n                        ajaxParameters = JSON.parse(JSON.stringify(this.ajax.axiosConfig));\n                        ajaxParameters.params = {};\n                    }\n                    if ( this.ajax.method=== \"POST\" ) {\n                        // Do nothing at this point !\n                    }\n                }\n                if (this.ajax.enabled && this.ajax.method === \"GET\") {\n                    axios.get(self.ajax.url, ajaxParameters )\n                        .then(response => {\n                            if (this.ajax.delegate) {\n                                if (response.data.echo !== self.echo) {\n                                    return;\n                                }\n                            }\n                            dataCallBackFunction(response.data);\n                            this.$parent.$emit('ajaxLoadedEvent', response.data);\n                        })\n                        .catch(e => {\n                            this.$parent.$emit('ajaxLoadingError', e);\n                        });\n                }\n                if (this.ajax.enabled && this.ajax.method === \"POST\") {\n                    axios.post(self.ajax.url, qs.stringify(ajaxParameters) , this.ajax.axiosConfig )\n                        .then(response => {\n                            if (this.ajax.delegate) {\n                                if (response.data.echo !== self.echo) {\n                                    return;\n                                }\n                            }\n\n                            dataCallBackFunction(response.data);\n                            this.$parent.$emit('ajaxLoadedEvent', response.data);\n\n                        })\n                        .catch(e => {\n                            this.$parent.$emit('ajaxLoadingError', e);\n                        });\n                }\n            },\n            buildColumnObject: function (column) {\n                var obj = {};\n                obj.title = column.title;\n                if ( typeof column.name !== \"undefined\")\n                    obj.name = column.name;\n                else\n                    obj.name = column.title;\n                if ( typeof column.visible !== \"undefined\")\n                    obj.visible = column.visible;\n                else\n                    obj.visible = true;\n                if ( typeof column.editable !== \"undefined\")\n                    obj.editable = column.editable;\n                else\n                    obj.editable = false;\n                if ( typeof column.renderfunction !== \"undefined\")\n                    obj.renderfunction = column.renderfunction;\n                else\n                    obj.renderfunction = false;\n                if ( typeof column.columnstyle !== \"undefined\")\n                    obj.columnstyle = column.columnstyle;\n                else\n                    obj.columnstyle = \"\";\n                if ( typeof column.cellstyle !== \"undefined\")\n                    obj.cellstyle = column.cellstyle;\n                else\n                    obj.cellstyle = \"\";\n\n                return obj;\n            },\n            setSortOrders: function () {\n                this.sortKey = [];\n                var sortOrders = {};\n                this.columns.forEach(function (column) {\n                    sortOrders[column.name] = \"\";\n                });\n                this.sortOrders = sortOrders;\n\n            },\n            sortBy: function (event, key) {\n                if (this.sortable) {\n                    var self = this;\n\n                    if (!this.multiColumnSortable || ( this.multiColumnSortable && !event.shiftKey)) {\n                        this.sortKey = [key];\n                        this.columns.forEach(function (column) {\n                            if (column.name !== key) {\n                                self.sortOrders[column.name] = \"\";\n                            }\n                        });\n                    } else {\n                        if (lodashfindindex(this.sortKey, function(o) { return o === key; }) === -1) {\n                            this.sortKey.push(key);\n                        }\n                    }\n                    if (this.sortOrders[key] === \"\") {\n                        this.sortOrders[key] = \"ASC\";\n                    } else if (this.sortOrders[key] === \"ASC\") {\n                        this.sortOrders[key] = \"DESC\";\n                    } else {\n                        this.sortOrders[key] = \"ASC\";\n                    }\n\n                    this.sortChanged = this.sortChanged * -1;\n                }\n            },\n            getClasses: function (column) {\n                var classes = [column.columnstyle];\n                var key = column.name;\n                if (this.sortable) {\n                    classes.push(\"arrow\");\n                    /*if (this.sortKey === key) {\n                        classes.push(\"active\");\n                    }*/\n                    if (lodashfindindex(this.sortKey, function(o) { return o === key; }) !== -1) {\n                        classes.push(\"active\");\n                        if (this.sortOrders[key] === \"ASC\") {\n                            classes.push(\"asc\");\n                        } else if (this.sortOrders[key] === \"DESC\") {\n                            classes.push(\"dsc\");\n                        }\n                    }\n                }\n                return classes;\n            },\n            toggleColumn: function (column) {\n                column.visible = !column.visible;\n            },\n            closeDropdown: function () {\n                this.columnMenuOpen = false;\n            },\n        },\n        events: {\n        }\n    }\n</script>\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
-	
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-	
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-	
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-	
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-	
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-	
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-	
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-	
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-	
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-	
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-	
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-	
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-	
-		update(obj);
-	
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-	
-	var replaceText = (function () {
-		var textStore = [];
-	
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-	
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-	
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-	
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-		var sourceMap = obj.sourceMap;
-	
-		if (media) {
-			styleElement.setAttribute("media", media);
-		}
-	
-		if (sourceMap) {
-			// https://developer.chrome.com/devtools/docs/javascript-debugging
-			// this makes source maps inside style tags work properly in Chrome
-			css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */';
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-	
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	
-	var _stringify = __webpack_require__(7);
+	var _stringify = __webpack_require__(3);
 	
 	var _stringify2 = _interopRequireDefault(_stringify);
 	
-	var _axios = __webpack_require__(10);
+	var _axios = __webpack_require__(6);
 	
 	var _axios2 = _interopRequireDefault(_axios);
 	
-	var _qs = __webpack_require__(37);
+	var _qs = __webpack_require__(33);
 	
 	var _qs2 = _interopRequireDefault(_qs);
 	
-	var _lodash = __webpack_require__(42);
+	var _lodash = __webpack_require__(38);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _lodash3 = __webpack_require__(44);
+	var _lodash3 = __webpack_require__(40);
 	
 	var _lodash4 = _interopRequireDefault(_lodash3);
 	
-	var _lodash5 = __webpack_require__(45);
+	var _lodash5 = __webpack_require__(41);
 	
 	var _lodash6 = _interopRequireDefault(_lodash5);
 	
@@ -559,106 +240,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	//         </div>
 	//     </div>
 	// </template>
-	// <style>
-	//     .vue-table {
-	//
-	//     }
-	//
-	//     /*#maindiv {
-	//         content: " ";
-	//         box-sizing: border-box;
-	//         display:
-	//         table; width: 100%;
-	//     }
-	// */
-	//     .vue-table-loading .spinner {
-	//         border: 16px solid #f3f3f3; /* Light grey */
-	//         border-top: 16px solid #3498db; /* Blue */
-	//         border-radius: 50%;
-	//         width: 120px;
-	//         height: 120px;
-	//         animation: spin 2s linear infinite;
-	//         position: absolute;
-	//         left: 50%;
-	//         top: 50%;
-	//         margin: -60px 0 0 -60px;
-	//     }
-	//
-	//     @keyframes spin {
-	//         0% { transform: rotate(0deg); }
-	//         100% { transform: rotate(360deg); }
-	//     }
-	//
-	//
-	//     .vue-table-loading{
-	//         position: absolute;
-	//         z-index: 99;
-	//         background-color: #ddd;
-	//         opacity: 0.5;
-	//         width: 100%;
-	//         height: 100%;
-	//     }
-	//
-	//     .vue-table-loading-hidden {
-	//         display: none;
-	//     }
-	//
-	//     table.vue-table thead > tr > th {
-	//         cursor: pointer;
-	//         padding-right: 30px !important;
-	//     }
-	//
-	//     /*.vue-table th.active {
-	//         color: red;
-	//     }*/
-	//
-	//     .vue-table .arrow {
-	//         opacity: 1;
-	//         position: relative;
-	//     }
-	//
-	//     .vue-table .arrow:after {
-	//         position: absolute;
-	//         bottom: 8px;
-	//         right: 8px;
-	//         display: block;
-	//         font-family: FontAwesome;
-	//         content: "\f0dc"; /* up-down arrow */
-	//         /*
-	//         display: inline-block;
-	//         vertical-align: middle;
-	//         width: 0;
-	//         height: 0;
-	//         margin-left: 5px;
-	//         opacity: 0.66;*/
-	//     }
-	//
-	//     .vue-table .arrow.asc:after {
-	//         content: "\f15d";
-	//         /*
-	//         border-left: 4px solid transparent;
-	//         border-right: 4px solid transparent;
-	//         border-bottom: 4px solid #000;
-	//         */
-	//     }
-	//
-	//     .vue-table .arrow.dsc:after {
-	//         content: "\f15e";
-	//     }
-	//
-	//
-	//     .vue-table .editableField {
-	//         cursor:pointer;
-	//     }
-	//
-	//     /*.vue-table .selected-cell {
-	//         background-color: #F7C072;
-	//     }
-	//
-	//     .vue-table .selected-row {
-	//         background-color: #FAE1BE !important;
-	//     }*/
-	// </style>
 	// <script>
 	
 	exports.default = {
@@ -1104,16 +685,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 7 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(8), __esModule: true };
+	module.exports = { "default": __webpack_require__(4), __esModule: true };
 
 /***/ }),
-/* 8 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(9);
+	var core = __webpack_require__(5);
 	var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
 	module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
 	  return $JSON.stringify.apply($JSON, arguments);
@@ -1121,7 +702,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 9 */
+/* 5 */
 /***/ (function(module, exports) {
 
 	var core = module.exports = { version: '2.5.0' };
@@ -1129,21 +710,21 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 10 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(11);
+	module.exports = __webpack_require__(7);
 
 /***/ }),
-/* 11 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
-	var bind = __webpack_require__(13);
-	var Axios = __webpack_require__(15);
-	var defaults = __webpack_require__(16);
+	var utils = __webpack_require__(8);
+	var bind = __webpack_require__(9);
+	var Axios = __webpack_require__(11);
+	var defaults = __webpack_require__(12);
 	
 	/**
 	 * Create an instance of Axios
@@ -1176,15 +757,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	// Expose Cancel & CancelToken
-	axios.Cancel = __webpack_require__(34);
-	axios.CancelToken = __webpack_require__(35);
-	axios.isCancel = __webpack_require__(31);
+	axios.Cancel = __webpack_require__(30);
+	axios.CancelToken = __webpack_require__(31);
+	axios.isCancel = __webpack_require__(27);
 	
 	// Expose all/spread
 	axios.all = function all(promises) {
 	  return Promise.all(promises);
 	};
-	axios.spread = __webpack_require__(36);
+	axios.spread = __webpack_require__(32);
 	
 	module.exports = axios;
 	
@@ -1193,13 +774,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 12 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var bind = __webpack_require__(13);
-	var isBuffer = __webpack_require__(14);
+	var bind = __webpack_require__(9);
+	var isBuffer = __webpack_require__(10);
 	
 	/*global toString:true*/
 	
@@ -1502,7 +1083,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 13 */
+/* 9 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1519,7 +1100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 14 */
+/* 10 */
 /***/ (function(module, exports) {
 
 	/*!
@@ -1546,17 +1127,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 15 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var defaults = __webpack_require__(16);
-	var utils = __webpack_require__(12);
-	var InterceptorManager = __webpack_require__(28);
-	var dispatchRequest = __webpack_require__(29);
-	var isAbsoluteURL = __webpack_require__(32);
-	var combineURLs = __webpack_require__(33);
+	var defaults = __webpack_require__(12);
+	var utils = __webpack_require__(8);
+	var InterceptorManager = __webpack_require__(24);
+	var dispatchRequest = __webpack_require__(25);
+	var isAbsoluteURL = __webpack_require__(28);
+	var combineURLs = __webpack_require__(29);
 	
 	/**
 	 * Create a new instance of Axios
@@ -1638,13 +1219,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 16 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var utils = __webpack_require__(12);
-	var normalizeHeaderName = __webpack_require__(18);
+	var utils = __webpack_require__(8);
+	var normalizeHeaderName = __webpack_require__(14);
 	
 	var DEFAULT_CONTENT_TYPE = {
 	  'Content-Type': 'application/x-www-form-urlencoded'
@@ -1660,10 +1241,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var adapter;
 	  if (typeof XMLHttpRequest !== 'undefined') {
 	    // For browsers use XHR adapter
-	    adapter = __webpack_require__(19);
+	    adapter = __webpack_require__(15);
 	  } else if (typeof process !== 'undefined') {
 	    // For node use HTTP adapter
-	    adapter = __webpack_require__(19);
+	    adapter = __webpack_require__(15);
 	  }
 	  return adapter;
 	}
@@ -1734,10 +1315,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	module.exports = defaults;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 17 */
+/* 13 */
 /***/ (function(module, exports) {
 
 	// shim for using process in browser
@@ -1927,12 +1508,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 18 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	module.exports = function normalizeHeaderName(headers, normalizedName) {
 	  utils.forEach(headers, function processHeader(value, name) {
@@ -1945,18 +1526,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 19 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var utils = __webpack_require__(12);
-	var settle = __webpack_require__(20);
-	var buildURL = __webpack_require__(23);
-	var parseHeaders = __webpack_require__(24);
-	var isURLSameOrigin = __webpack_require__(25);
-	var createError = __webpack_require__(21);
-	var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(26);
+	var utils = __webpack_require__(8);
+	var settle = __webpack_require__(16);
+	var buildURL = __webpack_require__(19);
+	var parseHeaders = __webpack_require__(20);
+	var isURLSameOrigin = __webpack_require__(21);
+	var createError = __webpack_require__(17);
+	var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(22);
 	
 	module.exports = function xhrAdapter(config) {
 	  return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -2053,7 +1634,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // This is only done if running in a standard browser environment.
 	    // Specifically not if we're in a web worker, or react-native.
 	    if (utils.isStandardBrowserEnv()) {
-	      var cookies = __webpack_require__(27);
+	      var cookies = __webpack_require__(23);
 	
 	      // Add xsrf header
 	      var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -2129,15 +1710,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  });
 	};
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 20 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var createError = __webpack_require__(21);
+	var createError = __webpack_require__(17);
 	
 	/**
 	 * Resolve or reject a Promise based on response status.
@@ -2164,12 +1745,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 21 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var enhanceError = __webpack_require__(22);
+	var enhanceError = __webpack_require__(18);
 	
 	/**
 	 * Create an Error with the specified message, config, error code, request and response.
@@ -2188,7 +1769,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 22 */
+/* 18 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2215,12 +1796,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 23 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	function encode(val) {
 	  return encodeURIComponent(val).
@@ -2289,12 +1870,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 24 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	/**
 	 * Parse headers into an object
@@ -2332,12 +1913,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 25 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -2406,7 +1987,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 26 */
+/* 22 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2448,12 +2029,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 27 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -2507,12 +2088,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 28 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	function InterceptorManager() {
 	  this.handlers = [];
@@ -2565,15 +2146,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 29 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
-	var transformData = __webpack_require__(30);
-	var isCancel = __webpack_require__(31);
-	var defaults = __webpack_require__(16);
+	var utils = __webpack_require__(8);
+	var transformData = __webpack_require__(26);
+	var isCancel = __webpack_require__(27);
+	var defaults = __webpack_require__(12);
 	
 	/**
 	 * Throws a `Cancel` if cancellation has been requested.
@@ -2650,12 +2231,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 30 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(12);
+	var utils = __webpack_require__(8);
 	
 	/**
 	 * Transform the data for a request or a response
@@ -2676,7 +2257,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 31 */
+/* 27 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2687,7 +2268,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 32 */
+/* 28 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2707,7 +2288,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 33 */
+/* 29 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2727,7 +2308,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 34 */
+/* 30 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2752,12 +2333,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 35 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Cancel = __webpack_require__(34);
+	var Cancel = __webpack_require__(30);
 	
 	/**
 	 * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -2815,7 +2396,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 36 */
+/* 32 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2848,14 +2429,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 37 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var stringify = __webpack_require__(38);
-	var parse = __webpack_require__(41);
-	var formats = __webpack_require__(40);
+	var stringify = __webpack_require__(34);
+	var parse = __webpack_require__(37);
+	var formats = __webpack_require__(36);
 	
 	module.exports = {
 	    formats: formats,
@@ -2865,13 +2446,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 38 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(39);
-	var formats = __webpack_require__(40);
+	var utils = __webpack_require__(35);
+	var formats = __webpack_require__(36);
 	
 	var arrayPrefixGenerators = {
 	    brackets: function brackets(prefix) { // eslint-disable-line func-name-matching
@@ -3081,7 +2662,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 39 */
+/* 35 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -3279,7 +2860,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 40 */
+/* 36 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -3303,12 +2884,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 41 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(39);
+	var utils = __webpack_require__(35);
 	
 	var has = Object.prototype.hasOwnProperty;
 	
@@ -3481,7 +3062,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 42 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -5971,10 +5552,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	module.exports = orderBy;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(43)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(39)(module)))
 
 /***/ }),
-/* 43 */
+/* 39 */
 /***/ (function(module, exports) {
 
 	module.exports = function(module) {
@@ -5990,7 +5571,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 44 */
+/* 40 */
 /***/ (function(module, exports) {
 
 	/**
@@ -6741,7 +6322,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 45 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -9139,10 +8720,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	module.exports = findIndex;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(43)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(39)(module)))
 
 /***/ }),
-/* 46 */
+/* 42 */
 /***/ (function(module, exports) {
 
 	module.exports = "\n<div id=\"maindiv\" @click=\"closeDropdown\" @keyup.esc=\"closeDropdown\">\n    <!--<pre>{{columns}}</pre>-->\n    <!--<pre>{{$data}}</pre>-->\n    <div class=\"col-sm-6\">\n        <div v-if=\"showFilter\" style=\"padding-top: 10px;padding-bottom: 10px;\">\n            <div class=\"input-group input-group-sm\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Filter\" v-model=\"filterKey\">\n                <div class=\"input-group-addon\">\n                    <i class=\"fa fa-search\"></i>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-sm-6\">\n        <div v-if=\"showColumnPicker\" style=\"padding-top: 10px;padding-bottom: 10px;float:right;\">\n            <div class=\"btn-group\" :class=\"{'open' : columnMenuOpen}\">\n                <button @click.stop.prevent=\"columnMenuOpen = !columnMenuOpen\" @keyup.esc=\"columnMenuOpen = false\"\n                        type=\"button\" class=\"btn btn-secondary btn-sm dropdown-toggle\" data-toggle=\"dropdown\"\n                        aria-haspopup=\"true\">\n                    Columns <span class=\"caret\"></span>\n                </button>\n                <ul class=\"dropdown-menu\">\n                    <li v-for=\"column in displayCols\">\n                        <a class=\"dropdown-item\" href=\"#\" @click.stop.prevent=\"toggleColumn(column)\">\n                            <i v-if=\"column.visible\" class=\"fa fa-check\"></i> {{column.title}}\n                        </a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-sm-12\">\n        <div id=\"loadingdiv\" :class=\"{'vue-table-loading': this.loading , 'vue-table-loading-hidden': !this.loading}\">\n            <div class=\"spinner\"></div>\n        </div>\n        <table class=\"table table-bordered table-hover table-condensed table-striped vue-table\">\n            <thead>\n                <tr>\n                    <th v-for=\"column in displayColsVisible\" @click=\"sortBy($event, column.name)\"\n                        track-by=\"column\"\n                        :class=\"getClasses(column)\">\n                        {{ column.title }}\n                    </th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr v-for=\"entry in filteredValuesSorted \" track-by=\"entry\" @click=\"rowClickHandler($event, entry)\">\n                    <td v-for=\"column in displayColsVisible\" track-by=\"column\"\n                        v-show=\"column.visible\" :class=\"column.cellstyle\">\n                        <span v-if=\"column.renderfunction!==false\" v-html=\"column.renderfunction( column.name, entry )\"></span>\n                        <span v-else-if=\"!column.editable\"> {{ entry[column.name] }} </span>\n                        <value-field-section v-else\n                            :entry=\"entry\"\n                            :columnname=\"column.name\"></value-field-section>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <div v-if=\"paginated\" class=\"col-sm-12\">\n        <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"pagination bar\">\n          <div class=\"btn-group\" role=\"group\" aria-label=\"first page\">\n            <button type=\"button\" class=\"btn btn-default\" @click=\"page=1\">&laquo;</button>\n          </div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"pages\">\n            <button v-for=\"index in validPageNumbers\"\n                type=\"button\" class=\"btn btn-default\"\n                :class=\"{ active: page===index }\"\n                @click=\"page=index\">\n                    {{index}}\n            </button>\n          </div>\n          <div class=\"btn-group\" v-if=\"showPaginationEtc\">...</div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"last page\">\n            <button type=\"button\" class=\"btn btn-default\" @click=\"page=maxPage\">&raquo;</button>\n          </div>\n        </div>\n    </div>\n</div>\n";
