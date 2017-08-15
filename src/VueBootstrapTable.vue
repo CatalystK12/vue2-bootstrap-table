@@ -3,7 +3,7 @@
         <!--<pre>{{columns}}</pre>-->
         <!--<pre>{{$data}}</pre>-->
         <div class="col-sm-3">
-            <div v-if="showAdd" style="padding-top: 10px;padding-bottom: 10px;">
+            <div v-if="showAdd" @click.stop.prevent="addClicked" style="padding-top: 10px;padding-bottom: 10px;">
                 <button class="btn btn-primary btn-sm">{{addLabel}}</button>
             </div>
         </div>
@@ -166,7 +166,7 @@
                 default: false,
             },
             /**
-             * Enable/disable "add" button, optional, default false
+             * Enable/disable "add" button, optional, default false. Emits 'addClicked'
              */
             showAdd: {
                 type: Boolean,
@@ -598,6 +598,9 @@
                     }
                 }
                 return classes;
+            },
+            addClicked: function () {
+                this.$parent.$emit('addClicked');
             },
             toggleColumn: function (column) {
                 column.visible = !column.visible;
