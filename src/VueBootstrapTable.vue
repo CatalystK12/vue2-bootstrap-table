@@ -4,7 +4,7 @@
         <!--<pre>{{$data}}</pre>-->
         <div class="col-sm-6">
             <div v-if="showFilter" style="padding-top: 10px;padding-bottom: 10px;">
-                <div class="input-group">
+                <div class="input-group input-group-sm">
                     <input type="text" class="form-control" placeholder="Filter" v-model="filterKey">
                     <div class="input-group-addon">
                         <i class="fa fa-search"></i>
@@ -16,13 +16,13 @@
             <div v-if="showColumnPicker" style="padding-top: 10px;padding-bottom: 10px;float:right;">
                 <div class="btn-group" :class="{'open' : columnMenuOpen}">
                     <button @click.stop.prevent="columnMenuOpen = !columnMenuOpen" @keyup.esc="columnMenuOpen = false"
-                            type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true">
                         Columns <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
                         <li v-for="column in displayCols">
-                            <a href="#" @click.stop.prevent="toggleColumn(column)">
+                            <a class="dropdown-item" href="#" @click.stop.prevent="toggleColumn(column)">
                                 <i v-if="column.visible" class="fa fa-check"></i> {{column.title}}
                             </a>
                         </li>
@@ -191,7 +191,7 @@
     /* Field Section used for displaying and editing value of cell */
     var valueFieldSection = {
       template: '<span v-if="!enabled" @dblclick="toggleInput" class="editableField">{{this.entry[this.columnname]}}</span>'+
-          '<div v-else-if="enabled" class="input-group">'+
+          '<div v-else-if="enabled" class="input-group input-group-sm">'+
           '  <input type="text" class="form-control" v-model="datavalue" @keyup.enter="saveThis" @keyup.esc="cancelThis">'+
           '  <span class="input-group-btn">'+
           '    <button class="btn btn-danger" type="button" @click="cancelThis" ><span class="fa fa-times" aria-hidden="true"></span></button>'+
