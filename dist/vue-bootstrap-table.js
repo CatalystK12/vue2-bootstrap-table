@@ -163,6 +163,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	//     <div id="maindiv" @click="closeDropdown" @keyup.esc="closeDropdown">
 	//         <!--<pre>{{columns}}</pre>-->
 	//         <!--<pre>{{$data}}</pre>-->
+	//         <div class="col-sm-3">
+	//             <div v-if="showAdd" style="padding-top: 10px;padding-bottom: 10px;">
+	//                 <button class="btn btn-primary btn-sm">{{addLabel}}</button>
+	//             </div>
+	//         </div>
 	//         <div class="col-sm-6">
 	//             <div v-if="showFilter" style="padding-top: 10px;padding-bottom: 10px;">
 	//                 <div class="input-group input-group-sm">
@@ -173,7 +178,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//                 </div>
 	//             </div>
 	//         </div>
-	//         <div class="col-sm-6">
+	//         <div class="col-sm-3">
 	//             <div v-if="showColumnPicker" style="padding-top: 10px;padding-bottom: 10px;float:right;">
 	//                 <div class="btn-group" :class="{'open' : columnMenuOpen}">
 	//                     <button @click.stop.prevent="columnMenuOpen = !columnMenuOpen" @keyup.esc="columnMenuOpen = false"
@@ -279,6 +284,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	            required: false,
 	            default: false
 	        },
+	        /**
+	         * Enable/disable "add" button, optional, default false
+	         */
+	        showAdd: {
+	            type: Boolean,
+	            required: false,
+	            default: false
+	        },
+	        /**
+	         * "Add" button text, optional, default "Add"
+	         */
+	        addLabel: {
+	            type: String,
+	            required: false,
+	            default: "Add"
+	        },
+	        /**
 	        /**
 	         * Enable/disable input filter, optional, default false
 	         */
@@ -8726,7 +8748,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 42 */
 /***/ (function(module, exports) {
 
-	module.exports = "\n<div id=\"maindiv\" @click=\"closeDropdown\" @keyup.esc=\"closeDropdown\">\n    <!--<pre>{{columns}}</pre>-->\n    <!--<pre>{{$data}}</pre>-->\n    <div class=\"col-sm-6\">\n        <div v-if=\"showFilter\" style=\"padding-top: 10px;padding-bottom: 10px;\">\n            <div class=\"input-group input-group-sm\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Filter\" v-model=\"filterKey\">\n                <div class=\"input-group-addon\">\n                    <i class=\"fa fa-search\"></i>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-sm-6\">\n        <div v-if=\"showColumnPicker\" style=\"padding-top: 10px;padding-bottom: 10px;float:right;\">\n            <div class=\"btn-group\" :class=\"{'open' : columnMenuOpen}\">\n                <button @click.stop.prevent=\"columnMenuOpen = !columnMenuOpen\" @keyup.esc=\"columnMenuOpen = false\"\n                        type=\"button\" class=\"btn btn-secondary btn-sm dropdown-toggle\" data-toggle=\"dropdown\"\n                        aria-haspopup=\"true\">\n                    Columns <span class=\"caret\"></span>\n                </button>\n                <ul class=\"dropdown-menu\">\n                    <li v-for=\"column in displayCols\">\n                        <a class=\"dropdown-item\" href=\"#\" @click.stop.prevent=\"toggleColumn(column)\">\n                            <i v-if=\"column.visible\" class=\"fa fa-check\"></i> {{column.title}}\n                        </a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-sm-12\">\n        <div id=\"loadingdiv\" :class=\"{'vue-table-loading': this.loading , 'vue-table-loading-hidden': !this.loading}\">\n            <div class=\"spinner\"></div>\n        </div>\n        <table class=\"table table-bordered table-hover table-condensed table-striped vue-table\">\n            <thead>\n                <tr>\n                    <th v-for=\"column in displayColsVisible\" @click=\"sortBy($event, column.name)\"\n                        track-by=\"column\"\n                        :class=\"getClasses(column)\">\n                        {{ column.title }}\n                    </th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr v-for=\"entry in filteredValuesSorted \" track-by=\"entry\" @click=\"rowClickHandler($event, entry)\">\n                    <td v-for=\"column in displayColsVisible\" track-by=\"column\"\n                        v-show=\"column.visible\" :class=\"column.cellstyle\">\n                        <span v-if=\"column.renderfunction!==false\" v-html=\"column.renderfunction( column.name, entry )\"></span>\n                        <span v-else-if=\"!column.editable\"> {{ entry[column.name] }} </span>\n                        <value-field-section v-else\n                            :entry=\"entry\"\n                            :columnname=\"column.name\"></value-field-section>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <div v-if=\"paginated\" class=\"col-sm-12\">\n        <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"pagination bar\">\n          <div class=\"btn-group\" role=\"group\" aria-label=\"first page\">\n            <button type=\"button\" class=\"btn btn-default\" @click=\"page=1\">&laquo;</button>\n          </div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"pages\">\n            <button v-for=\"index in validPageNumbers\"\n                type=\"button\" class=\"btn btn-default\"\n                :class=\"{ active: page===index }\"\n                @click=\"page=index\">\n                    {{index}}\n            </button>\n          </div>\n          <div class=\"btn-group\" v-if=\"showPaginationEtc\">...</div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"last page\">\n            <button type=\"button\" class=\"btn btn-default\" @click=\"page=maxPage\">&raquo;</button>\n          </div>\n        </div>\n    </div>\n</div>\n";
+	module.exports = "\n<div id=\"maindiv\" @click=\"closeDropdown\" @keyup.esc=\"closeDropdown\">\n    <!--<pre>{{columns}}</pre>-->\n    <!--<pre>{{$data}}</pre>-->\n    <div class=\"col-sm-3\">\n        <div v-if=\"showAdd\" style=\"padding-top: 10px;padding-bottom: 10px;\">\n            <button class=\"btn btn-primary btn-sm\">{{addLabel}}</button>\n        </div>\n    </div>\n    <div class=\"col-sm-6\">\n        <div v-if=\"showFilter\" style=\"padding-top: 10px;padding-bottom: 10px;\">\n            <div class=\"input-group input-group-sm\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Filter\" v-model=\"filterKey\">\n                <div class=\"input-group-addon\">\n                    <i class=\"fa fa-search\"></i>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-sm-3\">\n        <div v-if=\"showColumnPicker\" style=\"padding-top: 10px;padding-bottom: 10px;float:right;\">\n            <div class=\"btn-group\" :class=\"{'open' : columnMenuOpen}\">\n                <button @click.stop.prevent=\"columnMenuOpen = !columnMenuOpen\" @keyup.esc=\"columnMenuOpen = false\"\n                        type=\"button\" class=\"btn btn-secondary btn-sm dropdown-toggle\" data-toggle=\"dropdown\"\n                        aria-haspopup=\"true\">\n                    Columns <span class=\"caret\"></span>\n                </button>\n                <ul class=\"dropdown-menu\">\n                    <li v-for=\"column in displayCols\">\n                        <a class=\"dropdown-item\" href=\"#\" @click.stop.prevent=\"toggleColumn(column)\">\n                            <i v-if=\"column.visible\" class=\"fa fa-check\"></i> {{column.title}}\n                        </a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-sm-12\">\n        <div id=\"loadingdiv\" :class=\"{'vue-table-loading': this.loading , 'vue-table-loading-hidden': !this.loading}\">\n            <div class=\"spinner\"></div>\n        </div>\n        <table class=\"table table-bordered table-hover table-condensed table-striped vue-table\">\n            <thead>\n                <tr>\n                    <th v-for=\"column in displayColsVisible\" @click=\"sortBy($event, column.name)\"\n                        track-by=\"column\"\n                        :class=\"getClasses(column)\">\n                        {{ column.title }}\n                    </th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr v-for=\"entry in filteredValuesSorted \" track-by=\"entry\" @click=\"rowClickHandler($event, entry)\">\n                    <td v-for=\"column in displayColsVisible\" track-by=\"column\"\n                        v-show=\"column.visible\" :class=\"column.cellstyle\">\n                        <span v-if=\"column.renderfunction!==false\" v-html=\"column.renderfunction( column.name, entry )\"></span>\n                        <span v-else-if=\"!column.editable\"> {{ entry[column.name] }} </span>\n                        <value-field-section v-else\n                            :entry=\"entry\"\n                            :columnname=\"column.name\"></value-field-section>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <div v-if=\"paginated\" class=\"col-sm-12\">\n        <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"pagination bar\">\n          <div class=\"btn-group\" role=\"group\" aria-label=\"first page\">\n            <button type=\"button\" class=\"btn btn-default\" @click=\"page=1\">&laquo;</button>\n          </div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"pages\">\n            <button v-for=\"index in validPageNumbers\"\n                type=\"button\" class=\"btn btn-default\"\n                :class=\"{ active: page===index }\"\n                @click=\"page=index\">\n                    {{index}}\n            </button>\n          </div>\n          <div class=\"btn-group\" v-if=\"showPaginationEtc\">...</div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"last page\">\n            <button type=\"button\" class=\"btn btn-default\" @click=\"page=maxPage\">&raquo;</button>\n          </div>\n        </div>\n    </div>\n</div>\n";
 
 /***/ })
 /******/ ])

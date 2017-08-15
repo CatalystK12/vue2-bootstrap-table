@@ -2,6 +2,11 @@
     <div id="maindiv" @click="closeDropdown" @keyup.esc="closeDropdown">
         <!--<pre>{{columns}}</pre>-->
         <!--<pre>{{$data}}</pre>-->
+        <div class="col-sm-3">
+            <div v-if="showAdd" style="padding-top: 10px;padding-bottom: 10px;">
+                <button class="btn btn-primary btn-sm">{{addLabel}}</button>
+            </div>
+        </div>
         <div class="col-sm-6">
             <div v-if="showFilter" style="padding-top: 10px;padding-bottom: 10px;">
                 <div class="input-group input-group-sm">
@@ -12,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <div v-if="showColumnPicker" style="padding-top: 10px;padding-bottom: 10px;float:right;">
                 <div class="btn-group" :class="{'open' : columnMenuOpen}">
                     <button @click.stop.prevent="columnMenuOpen = !columnMenuOpen" @keyup.esc="columnMenuOpen = false"
@@ -160,6 +165,23 @@
                 required: false,
                 default: false,
             },
+            /**
+             * Enable/disable "add" button, optional, default false
+             */
+            showAdd: {
+                type: Boolean,
+                required: false,
+                default: false,
+            },
+            /**
+             * "Add" button text, optional, default "Add"
+             */
+            addLabel: {
+                type: String,
+                required: false,
+                default: "Add",
+            },
+            /**
             /**
              * Enable/disable input filter, optional, default false
              */
