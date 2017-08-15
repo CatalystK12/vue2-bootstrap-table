@@ -7,7 +7,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Filter" v-model="filterKey">
                     <div class="input-group-addon">
-                        <i class="glyphicon glyphicon-search"></i>
+                        <i class="fa fa-search"></i>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <ul class="dropdown-menu">
                         <li v-for="column in displayCols">
                             <a href="#" @click.stop.prevent="toggleColumn(column)">
-                                <i v-if="column.visible" class="glyphicon glyphicon-ok"></i> {{column.title}}
+                                <i v-if="column.visible" class="fa fa-check"></i> {{column.title}}
                             </a>
                         </li>
                     </ul>
@@ -142,8 +142,8 @@
         bottom: 8px;
         right: 8px;
         display: block;
-        font-family: 'Glyphicons Halflings';
-        content: "\e150";
+        font-family: FontAwesome;
+        content: "\f0dc"; /* up-down arrow */
         /*
         display: inline-block;
         vertical-align: middle;
@@ -154,7 +154,7 @@
     }
 
     .vue-table .arrow.asc:after {
-        content: "\e155";
+        content: "\f15d";
         /*
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
@@ -163,7 +163,7 @@
     }
 
     .vue-table .arrow.dsc:after {
-        content: "\e156";
+        content: "\f15e";
     }
 
 
@@ -194,8 +194,8 @@
           '<div v-else-if="enabled" class="input-group">'+
           '  <input type="text" class="form-control" v-model="datavalue" @keyup.enter="saveThis" @keyup.esc="cancelThis">'+
           '  <span class="input-group-btn">'+
-          '    <button class="btn btn-danger" type="button" @click="cancelThis" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>'+
-          '    <button class="btn btn-primary" type="button" @click="saveThis" ><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>'+
+          '    <button class="btn btn-danger" type="button" @click="cancelThis" ><span class="fa fa-times" aria-hidden="true"></span></button>'+
+          '    <button class="btn btn-primary" type="button" @click="saveThis" ><span class="fa fa-check" aria-hidden="true"></span></button>'+
           '  </span>'+
           '</div>',
       props: ['entry','columnname'],
@@ -668,12 +668,11 @@
                     }*/
                     if (lodashfindindex(this.sortKey, function(o) { return o === key; }) !== -1) {
                         classes.push("active");
-                    }
-
-                    if (this.sortOrders[key] === "ASC") {
-                        classes.push("asc");
-                    } else if (this.sortOrders[key] === "DESC") {
-                        classes.push("dsc");
+                        if (this.sortOrders[key] === "ASC") {
+                            classes.push("asc");
+                        } else if (this.sortOrders[key] === "DESC") {
+                            classes.push("dsc");
+                        }
                     }
                 }
                 return classes;
